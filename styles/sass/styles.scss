@@ -1,3 +1,9 @@
-body {
-    background-color: darkblue;
-}
+@use "./partials/setup";
+@use "./partials/variables";
+@use "./partials/typography";
+@use "./partials/baseStyles";
+@use "./partials/header";
+@use "./partials/footer";
+@use "./partials/nav";
+@use "./partials/sections";
+@use "./partials/mediaQueries";
