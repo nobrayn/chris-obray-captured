@@ -4,43 +4,47 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> <!-- linking to Google Font Library -->
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto&display=swap"
 		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/4a6b8331d3.js" crossorigin="anonymous"></script> <!-- linking to FontAwesome -->
 	<link rel="stylesheet" href="./styles/styles.css">
 	<title>Captured</title>
 </head>
-<body>
-	<header>
-		<div class="wrapper">
-			<nav class="navBar">
-				<ul>
-					<li><a href="#"></a>home</li>
-					<li><a href="#"></a>about</li>
-					<li><a href="#"></a>blog</li>
-					<li><a href="#"></a>contact</li>
-				</ul>
-			</nav>
-			<h1>captured</h1>
-		</div>
-	</header>
 
-	<main>
-		<nav class="wrapper">
+<body>
+	<nav class="navBar" id="navBar">
+		<div class="wrapper">
+			<ul>
+				<li><a href="#"></a>home</li>
+				<li><a href="#"></a>about</li>
+				<li><a href="#"></a>blog</li>
+				<li><a href="#"></a>contact</li>
+			</ul> 
+		</div> <!-- .wrapper end -->
+	</nav> <!-- .wrapper end -->
+
+	<header>
+		<img src="./captured-final-assets/header-box-image.jpg" alt="Extreme closeup photo of the top of a camera's telephoto lens.">
+
+		<div class="wrapper">
 			<div class="mainFlex">
 				<h2>what is captured?</h2>
 				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, illo? Iure, similique repellat deleniti illum maiores quis quas quisquam quaerat voluptas error qui dignissimos nostrum, voluptatibus aliquam ad autem quae eum molestiae sunt aut hic quo deserunt veritatis. Quam, at.</p>
-				<a href="#" class="findOutBtn">find out more</a>
-			</div>
-		</nav>
-		
+				<a href="#" class="findOutBtn findOutBtnOne">find out more</a>
+			</div> <!-- .mainFlex end -->
+		</div> <!-- .wrapper end -->
+	</header>
+
+	<main>
 		<!-- blog/read more section -->
-		<section class="articles">
+		<section class="articles" id="articles">
 			<article class="articleGrid grid2x2" id="article">
 				<div class="box box1">
 					<img src="./captured-final-assets/left-image.jpg" alt="a DSLR camera with black body and large grey lens is tossed in the air against a cloudy grey background">
-				</div>
+				</div> <!-- .box .box1 end -->
+
 				<div class="box box2">
 					<div class="storyBox">
 						<h3>unlock your skills</h3>
@@ -48,49 +52,73 @@
 						provident voluptatem quaerat molestias, est quae alias soluta, sit qui vel? Expedita officiis laborum
 						est nihil.</p>
 						<a class="readMore" href="#">Read More</a>
-					</div>
-				</div>
+					</div> <!-- .storyBox end -->
+				</div> <!-- .box .box2 end -->
 
 				<div class="box box3">
 					<div class="storyBox">
 						<h3>getting new gear</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla voluptatum, doloribus quae tempore nam
-						quisquam at corrupti accusamus, culpa mollitia et ullam? Quidem itaque perferendis fugiat placeat
-						reiciendis quos a.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla voluptatum, doloribus quae tempore nam quisquam at corrupti accusamus, culpa mollitia et ullam? Quidem itaque perferendis fugiat placeat reiciendis quos a.</p>
 						<a class="readMore" href="#">Read More</a>
-						</div>
-					</div>
-					<div class="box box4">
-						<img src="./captured-final-assets/right-image.jpg" alt="a person holding a Canon DSLR camera pointed downward as they look at the screen on back">
-					</div>
-			</article>
+					</div> <!-- .storyBox end -->
+				</div> <!-- .box .box3 end -->
+
+				<div class="box box4">
+					<img src="./captured-final-assets/right-image.jpg" alt="a person holding a Canon DSLR camera pointed downward as they look at the screen on back">
+				</div> <!-- .box .box4 end -->
+			</article> <!-- .articleGrid .grid2x2 end -->
 
 			<article class="articleList">
 				<ul>
-					<li>
-						<img src="" alt="">
-						<h3>top picks</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum exercitationem enim aliquid? Quasi autem exercitationem dolorem facilis, labore nemo voluptatem nesciunt culpa est impedit doloribus.</p>
+					<li class="articleOne">
+						<a href="#"><i class="fa-solid fa-camera fa-2xl"></i></a>
+						<a href="#"><h3>top picks</h3></a>
+						<a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum exercitationem enim aliquid? Quasi autem exercitationem dolorem facilis, labore nemo voluptatem nesciunt culpa est impedit doloribus.</p></a>
 					</li>
-					<li>
-						<img src="" alt="">
-						<h3>community</h3>
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste distinctio harum ipsam, officia placeat consequatur, cumque alias consectetur soluta cum modi eaque architecto hic cupiditate.</p>
+
+					<li class="articleTwo">
+						<a href="#"><i class="fa-solid fa-users fa-2xl"></i></a>
+						<a href="#"><h3>community</h3></a>
+						<a href="#"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste distinctio harum ipsam, officia placeat consequatur, cumque alias consectetur soluta cum modi eaque architecto hic cupiditate.</p></a>
 					</li>
-					<li>
-						<img src="" alt="">
-						<h3>blog</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ullam incidunt repellendus velit, fugit officia odio ducimus aliquam quidem magnam, beatae ipsa modi recusandae id.</p>
+
+					<li class="articleThree">
+						<a href="#"><i class="fa-solid fa-file fa-2xl"></i></a>
+						<a href="#"><h3>blog</h3></a>
+						<a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ullam incidunt repellendus velit, fugit officia odio ducimus aliquam quidem magnam, beatae ipsa modi recusandae id.</p></a>
 					</li>
-					<li>
-						<img src="" alt="">
-						<h3>get in touch</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat harum suscipit sapiente nostrum, qui id dolore fuga quod a expedita adipisci tempore doloribus debitis inventore.</p>
+
+					<li class="articleFour">
+						<a href="#"><i class="fa-solid fa-phone-flip fa-2xl"></i></a>
+						<a href="#"><h3>get in touch</h3></a>
+						<a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat harum suscipit sapiente nostrum, qui id dolore fuga quod a expedita adipisci tempore doloribus debitis inventore.</p></a>
 					</li>
 				</ul>
 			</article>
-
 		</section>
+
+		<section class="profile">
+			<img src="./captured-final-assets/banner.jpg" alt="Paper map spread out with apencil, handbag and camera sitting on top.">
+			<div class="wrapper profileFlex">
+				<img src="./captured-final-assets/small-box.jpg" alt="A man sits on a large rock with his camera with large mountains in the background">
+				<div class="profileText">
+					<h2>this month's profile</h2>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta delectus cumque consectetur deleniti saepe iure voluptatum corrupti et voluptatem enim ut non cum quis, nam sed maiores sunt dolore? Eos inventore dolorum voluptatibus repellat sed id, est natus ut officia quo nulla iste magni cum vitae quibusdam commodi doloremque ipsa autem totam quis? Nemo necessitatibus qui facilis nisi aut neque!</p>
+					<a href="#" class="findOutBtn findOutBtnTwo">find out more</a>
+				</div> <!-- .profileText end -->
+			</div> <!-- .wrapper .profileFlex end -->
+		</section> <!-- .profile end -->
 	</main>
+	
+	<footer>
+		<div class="wrapper">
+			<div class="footerFlex">
+				<a href="#"><img src="./captured-final-assets/gallery-image-1.jpg" alt="Rear view of a DSLR camera with viewfinder, screen and several controls on display."></a>
+				<a href="#"><img src="./captured-final-assets/gallery-image-2.jpg" alt="Front view of vintage Agfa camera artistically displayed amongst green leaves."></a>
+				<a href="#"><img src="./captured-final-assets/gallery-image-3.jpg" alt="Upper angle view of a Nikon DSL camera with two others out of focus on either side."></a>
+			</div>
+			<p class="copyright">Copyright © 2022 Juno College</p>
+		</div>
+	</footer>
 </body>
 </html>

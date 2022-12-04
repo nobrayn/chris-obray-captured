@@ -322,6 +322,15 @@ button {
   letter-spacing: 0.1rem;
 }
 
+img {
+  max-width: 100%;
+}
+
+header {
+  background-image: url(../captured-final-assets/header-image.jpg);
+  background-size: cover;
+}
+
 .article {
   display: -webkit-box;
   display: -ms-flexbox;
