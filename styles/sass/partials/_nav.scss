@@ -1,5 +1,19 @@
+@use "variables" as *;
+
 header {
     background-image: url(../captured-final-assets/header-image.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
+    height: 50vh;
 }
 
+.navBar {
+    .wrapper ul {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+        li {
+            padding: 0 10px;
+        }
+    }
+}

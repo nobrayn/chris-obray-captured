@@ -1,4 +1,40 @@
 // article section, 2x2 grid, full-bleed so flex-basis set at 50%, no wrapper for this section
-.article {
+.articleGrid {
     display: flex;
+}
+
+.grid2x2 {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.grid2x2>div {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.grid2x2>div>div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 80px;
+}
+
+.topBoxLeftJustify {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.btmBoxRightJustify {
+    text-align: right;
+    margin-bottom: 0;
+}
+
+// prevent READ MORE buttons from horizontally filling flex container
+.readMore {
+    width: fit-content;
 }

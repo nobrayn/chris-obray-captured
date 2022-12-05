@@ -238,7 +238,9 @@ h3,
 h4,
 ul,
 li a,
-button {
+button,
+.readMore,
+.findOutBtn {
   font-family: "Playfair Display", serif;
   font-weight: bold;
   font-style: italic;
@@ -322,17 +324,107 @@ button {
   letter-spacing: 0.1rem;
 }
 
+.findOutBtn, .readMore {
+  color: #2C2C2C;
+  background-color: #4CEEA7;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 3.2rem;
+  letter-spacing: 0.1rem;
+  padding: 10px 20px;
+}
+
 img {
   max-width: 100%;
 }
 
 header {
   background-image: url(../captured-final-assets/header-image.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
+  height: 50vh;
 }
 
-.article {
+.navBar .wrapper ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 20px;
+}
+.navBar .wrapper ul li {
+  padding: 0 10px;
+}
+
+header {
+  background-image: url(../captured-final-assets/header-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+.articleGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid2x2 {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.grid2x2 > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.grid2x2 > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 80px;
+}
+
+.topBoxLeftJustify {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.btmBoxRightJustify {
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.readMore {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }

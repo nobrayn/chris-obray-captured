@@ -15,6 +15,16 @@ button {
     letter-spacing: 0.1rem;
 }
 
+.findOutBtn, .readMore {
+    color: $tertiary;
+    background-color: $secondary;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3.2rem;
+    letter-spacing: 0.1rem;
+    padding: 10px 20px;
+}
+
 img {
     max-width: 100%;
 }
