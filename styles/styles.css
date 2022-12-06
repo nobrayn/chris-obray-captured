@@ -338,13 +338,6 @@ img {
   max-width: 100%;
 }
 
-header {
-  background-image: url(../captured-final-assets/header-image.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vh;
-}
-
 .navBar .wrapper ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,28 +351,46 @@ header {
   padding: 0 10px;
 }
 
+a:hover,
+a:focus {
+  color: #4CEEA7;
+}
+
 header {
   background-image: url(../captured-final-assets/header-image.jpg);
   background-size: contain;
   background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
   min-height: 100vh;
-  z-index: 20;
-}
-
-.boxImage {
-  position: absolute;
-  right: 0;
   z-index: 1;
 }
 
-h1 {
+.headerContainer {
+  width: 100%;
+  position: relative;
+}
+.headerContainer img {
   position: absolute;
-  left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  /* Need a specific value to work */
-  z-index: 10;
+  margin-top: 130px;
+  z-index: 0;
+  max-width: 40%;
+  border-top: 40px solid #FDFA69;
+  border-left: 40px solid #FDFA69;
+  border-bottom: 40px solid #FDFA69;
+}
+.headerContainer h1 {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  margin-top: 540px;
+  z-index: 2;
+}
+
+.mainFlex {
+  text-align: center;
+  margin: 200px 0px;
 }
 
 .articleGrid {
@@ -389,7 +400,6 @@ h1 {
 }
 
 .grid2x2 {
-  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,4 +454,10 @@ h1 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.articleList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

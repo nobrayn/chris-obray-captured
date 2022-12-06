@@ -1,10 +1,19 @@
+@use "variables" as *;
+
+// whatIs section
+.mainFlex {
+    text-align: center;
+    margin: 200px 0px;
+}
+
+
 // article section, 2x2 grid, full-bleed so flex-basis set at 50%, no wrapper for this section
 .articleGrid {
     display: flex;
 }
 
 .grid2x2 {
-    min-height: 100%;
+    // min-height: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -38,3 +47,11 @@
 .readMore {
     width: fit-content;
 }
+
+// article list section
+
+.articleList {
+    display: flex;
+}
+
+// profile section
