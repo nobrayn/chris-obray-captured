@@ -23,7 +23,16 @@ button {
     line-height: 3.2rem;
     letter-spacing: 0.1rem;
     padding: 10px 20px;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
 }
+
+// button:hover,
+// button:focus {
+//     color: #0000DA;
+//     border-right: 3px solid #0000DA;
+//     border-bottom: 3px solid #0000DA;
+// }
 
 img {
     max-width: 100%;
