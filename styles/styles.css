@@ -247,7 +247,8 @@ button,
   text-transform: uppercase;
 }
 
-p {
+p,
+a {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -311,7 +312,7 @@ a {
 
 .wrapper {
   max-width: 1260px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -333,7 +334,17 @@ button {
   letter-spacing: 0.1rem;
   padding: 10px 20px;
   border-right: 3px solid transparent;
-  border-bottom: 3px solid transparent;
+  border-bottom: 3px solid transparent; /* so the element doesn't move when hovered/focused */
+}
+
+.findOutBtn:hover,
+.findOutBtn:focus,
+.readMore:hover,
+.readMore:focus {
+  color: #0000DA;
+  border-right: 3px solid #0000DA;
+  border-bottom: 3px solid #0000DA;
+  border-radius: 5px;
 }
 
 img {
@@ -351,12 +362,13 @@ img {
 }
 .navBar .wrapper ul li {
   padding: 0 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 a:hover,
 a:focus {
   color: #0000DA;
-  border-bottom: 3px solid #0000DA;
 }
 
 header {
@@ -393,7 +405,7 @@ header {
 
 .mainFlex {
   text-align: center;
-  margin: 200px 0px;
+  margin: 150px 0px;
 }
 
 .articleGrid {
@@ -459,8 +471,97 @@ header {
   width: fit-content;
 }
 
-.articleList {
+.readMoreTwo {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.articleListOne ul,
+.articleListTwo ul {
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.articleListOne ul li,
+.articleListTwo ul li {
+  text-align: left;
+  margin: 0 50px 0 50px;
+  position: relative;
+}
+.articleListOne ul h a:hover,
+.articleListOne ul h a:focus,
+.articleListTwo ul h a:hover,
+.articleListTwo ul h a:focus {
+  color: #0000DA;
+  border-bottom: 3px solid #0000DA;
+}
+
+.fa-solid {
+  background-color: #4CEEA7;
+  padding: 20px 7px;
+  border-radius: 50%;
+  border: 3px solid transparent; /* so the elements don't move when hovered/focused */
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  position: absolute;
+  left: -65px;
+  top: 20px;
+}
+
+.fa-users {
+  padding: 22px 4px;
+}
+
+.fa-file {
+  padding: 20px 10px;
+}
+
+.fa-solid:hover,
+.fa-solid:focus {
+  color: #0000DA;
+  border: 3px solid #0000DA;
+  border-radius: 50%;
+}
+
+.profile {
+  margin-top: 100px;
+}
+
+.profileFlex {
+  margin: 100px auto 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.profileFlex img {
+  -webkit-box-shadow: 40px 40px 0px 0px #FDFA69;
+          box-shadow: 40px 40px 0px 0px #FDFA69;
+}
+
+.profileText {
+  margin-left: 80px;
+  margin-top: -40px;
+}
+
+.footerFlex {
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footerFlex a {
+  margin: 0 20px 0 20px;
+}
+
+footer a {
+  margin-top: 30px;
+  display: block;
+  color: #FAFAFA;
+  background-color: #2C2C2C;
+  text-align: center;
 }

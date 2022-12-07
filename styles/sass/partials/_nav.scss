@@ -7,6 +7,7 @@
         padding: 20px;
         li {
             padding: 0 10px;
+            transition: .2s; // putting transition properties here, the parent of the anchor element, isn't working like I thought it should.
         }
     }
 }
@@ -14,5 +15,12 @@
 a:hover,
 a:focus {
     color: #0000DA;
-    border-bottom: 3px solid #0000DA;
+    // border-bottom: 3px solid #0000DA; // might remove this
 }
+
+// a {
+//     border-bottom: 3px solid transparent; /* so the element doesn't move when hovered/focused */
+//     :focus,
+//     :hover {
+//     }
+// }

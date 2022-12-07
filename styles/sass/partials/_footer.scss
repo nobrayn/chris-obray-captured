@@ -1,0 +1,19 @@
+@use "variables" as *;
+
+.footerFlex {
+    margin-top: 150px;
+    display: flex;
+    a {
+        margin: 0 20px 0 20px;
+    }
+}
+
+footer a {
+    margin-top: 30px;
+    display: block;
+    color: $quaternary;
+    background-color: $tertiary;
+    text-align: center;
+}
+
+// fix footer hover state, why do the images have background color. why does THIS MONTH profile stretch. Fix shit.

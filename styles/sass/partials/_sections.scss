@@ -3,9 +3,8 @@
 // whatIs section
 .mainFlex {
     text-align: center;
-    margin: 200px 0px;
+    margin: 150px 0px;
 }
-
 
 // article section, 2x2 grid, full-bleed so flex-basis set at 50%, no wrapper for this section
 .articleGrid {
@@ -48,10 +47,76 @@
     width: fit-content;
 }
 
-// article list section
+.readMoreTwo {
+    align-self: flex-end;
+}
 
-.articleList {
+// article list section
+.articleListOne ul,
+.articleListTwo ul {
+    margin-top: 100px;
     display: flex;
+    flex-direction: row;
+    li {
+        text-align: left;
+        margin: 0 50px 0 50px;
+        position: relative;
+    }
+    h {
+        a:hover,
+        a:focus {
+            color: #0000DA;
+            border-bottom: 3px solid #0000DA;
+        }
+    }
+}
+
+// adding circles behind icons
+.fa-solid {
+    background-color: $secondary;
+    padding: 20px 7px;
+    border-radius: 50%;
+    border: 3px solid transparent; /* so the elements don't move when hovered/focused */
+    transition: .3s ease;
+    position: absolute;
+    left: -65px;
+    top: 20px;
+}
+
+// the following two require different padding due to their widths
+.fa-users {
+    padding: 22px 4px;
+}
+
+.fa-file {
+    padding: 20px 10px;
+}
+
+// giving the teal buttons a hover/focus effect
+.fa-solid:hover,
+.fa-solid:focus {
+    color: #0000DA;
+    border: 3px solid #0000DA;
+    // border-bottom: 3px solid #0000DA;
+    border-radius: 50%;
 }
 
 // profile section
+
+.profile {
+    margin-top: 100px;
+}
+
+.profileFlex {
+    margin: 100px auto 100px auto;
+    display: flex;
+    img {
+        box-shadow: 40px 40px 0px 0px $primary
+    }
+}
+
+.profileText {
+    margin-left: 80px;
+    margin-top: -40px;
+}
+
