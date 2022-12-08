@@ -1,6 +1,6 @@
 @use "variables" as *;
 
-header {
+.headerIndex {
     background-image: url(../captured-final-assets/header-image.jpg);
     background-size: contain;
     background-position: top center;
@@ -9,6 +9,17 @@ header {
     min-height: 100vh;
     z-index: 1;
 }
+
+.headerContact {
+    background-image: url(../captured-final-assets/contact-header.jpg);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100vh;
+    z-index: 1;
+}
+
 
 .headerContainer {
     width: 100%;

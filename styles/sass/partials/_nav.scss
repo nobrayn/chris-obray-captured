@@ -14,7 +14,7 @@
 
 a:hover,
 a:focus {
-    color: #0000DA;
+    color: $secondary; // only use border-bottom! See Contact styleguide
     // border-bottom: 3px solid #0000DA; // might remove this
 }
 
