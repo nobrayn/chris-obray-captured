@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- linking to Google Font Library -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4a6b8331d3.js" crossorigin="anonymous"></script>
+  <!-- linking to FontAwesome -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Blog</title>
+</head>
+
+<body>
+  <header class="headerBlog">
+    <nav class="navBar" id="navBar">
+      <div class="wrapper">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div> <!-- .wrapper end -->
+    </nav> <!-- .navBar end -->
+
+    <div class="headerContainer">
+      <h1>blog</h1>
+    </div> <!-- .headerContainer end -->
+    
+  </header>
+  
+  <main>
+    <div class="blogImageBox">
+      <img src="./captured-final-assets/blog-post-image.jpg" alt="A caucasian woman sitting in a field of dandelions taking a picture of the sunset in the distance.">
+    </div> <!-- .blogImageBox end -->
+
+    <div class="wrapper">
+      <div class="twoColumnContainer">
+        <aside class="blogSideBar">
+          <h4>about captured</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequatur quod pariatur.<span><a href="#">Find out more.</a></span></p>
+          <h4>recent posts</h4>
+          <ul class="recentPosts">
+            <li>Lorem ipsum dolor sit</li>
+            <li>Pariatur mollitia saepe</li>
+            <li>adipisicing elit</li>
+            <li>Elit aut laboriosam id</li>
+          </ul> <!-- .recentPosts end -->
+        </aside> <!-- .blogSideBar end -->
+
+        <section class="blogPost" id="blogPost">
+          <h2>finding great locations</h2>
+          <p>Monday May 4th 2019 by Dieula</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga repellendus deleniti provident architecto quas cumque, saepe corporis nostrum maiores asperiores! Corrupti ullam ipsa optio architecto laborum, consequuntur quia ut dolor? Natus hic pariatur quos eaque perspiciatis eos tempore, iure nemo reprehenderit, voluptas numquam commodi necessitatibus ea at asperiores? Eaque illum quo sint dolorum minima itaque cupiditate facere qui, adipisci unde omnis voluptas enim perspiciatis dignissimos consequuntur nulla quia officiis! Quam laboriosam voluptate, praesentium expedita ab natus quo quisquam, voluptas veritatis ducimus ipsum nesciunt excepturi repellat tenetur est, enim assumenda facere similique perspiciatis magnam itaque accusantium quia suscipit. Maxime porro voluptas iure! Accusantium, tempora. Soluta placeat dignissimos consequatur provident quasi distinctio facere et autem! Nesciunt nisi aut similique, itaque ratione facilis at ullam perferendis doloremque laudantium odio laboriosam fugiat suscipit, sed ab veniam libero harum consequuntur quo cum consequatur! Saepe eius reprehenderit, eos quaerat maiores commodi esse illo facere doloremque excepturi adipisci distinctio voluptate iusto perferendis sequi rerum vero in animi. Adipisci unde omnis voluptas enim perspiciatis dignissimos consequuntur nulla quia officiis! Quam laboriosam voluptate, praesentium expedita ab natus quo quisquam, voluptas veritatis ducimus ipsum nesciunt excepturi repellat tenetur est, enim assumenda facere similique.</p>
+        </section> <!-- .blogPost end-->
+      </div> <!-- .twoColumnContainer end-->
+
+      <section class="comments" id="comments">
+        <div class="commentOne">
+          <img src="./captured-final-assets/comment-1.jpg" alt="Small profile picture of a young black man in a baseball hat looking to the right.">
+          <p>Tuesday October 9th, 2018 by Jeremy</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas modi nesciunt totam eos amet nihil facere quasi ducimus maiores a, ad reprehenderit veniam iusto cupiditate ea tempore architecto ipsa reiciendis nobis sequi. At dolor maiores aut voluptas non veniam nisi nobis, delectus dicta, quae!</p>
+        </div> <!-- .commentOne end-->
+
+        <div class="commentTwo">
+          <img src="./captured-final-assets/comment-2.jpg" alt="Small profile picture of a young caucasian lady with long blonde hair looking to the left.">
+          <p>Wednesday October 10th, 2018 by Julia</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, nobis, laudantium eaque laboriosam molestias earum nam accusamus atque nulla facere, illo labore magni doloribus quibusdam ratione non deserunt eveniet ut corporis consectetur itaque velit!</p>
+        </div> <!-- .commentTwo end-->
+      </section> <!-- .comments end -->
+
+      <section class="commentBox">
+        <form action="#" method="#" name="commentForm">
+          <label for="name"></label>
+          <input type="text" id="name" name="name" placeholder="Name">
+          <label for="emailAddress"></label>
+          <input type="text" id="emailAddress" name="emailAddress" placeholder="Email address">
+          <label for="message"></label>
+          <textarea name="message" placeholder="Message" id="message" cols="70" rows="6"></textarea>
+          <button type="submit" value="commentSubmit">post comment</button>
+        </form>
+      </section>
+    </div> <!-- .wrapper end -->
+  </main>
+
+  <footer>
+    <a href="https://junocollege.com/">Copyright © 2022 Juno College</a>
+  </footer>
+  
+</body>
+</html>
