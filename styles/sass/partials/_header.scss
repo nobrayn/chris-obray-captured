@@ -12,16 +12,25 @@
 
 .headerContact {
     background-image: url(../captured-final-assets/contact-header.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     position: relative;
-    min-height: 100vh;
-    z-index: 1;
+    min-height: 70vh;
+}
+
+.headerBlog {
+    background-image: url(../captured-final-assets/blog-header.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 70vh;
 }
 
 
-.headerContainer {
+
+.headerContainerMain {
     width: 100%;
     position: relative;
     img {
@@ -41,5 +50,15 @@
         width: 100%;
         margin-top: 540px;
         z-index: 2;
+    }
+}
+
+.headerContainer
+.headerContainerBlog,
+.headerContainerContact {
+    width: 100%;
+    h1 {
+        text-align: center;
+        margin-top: 140px;
     }
 }

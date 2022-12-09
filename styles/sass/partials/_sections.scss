@@ -1,5 +1,7 @@
 @use "variables" as *;
 
+// *********** index.html ***********
+
 // whatIs section
 .mainFlex {
     text-align: center;
@@ -62,16 +64,13 @@
         margin: 0 50px 0 50px;
         position: relative;
     }
-    h {
-        a:hover,
-        a:focus {
-            color: #0000DA;
-            border-bottom: 3px solid #0000DA;
-        }
-    }
 }
 
-// adding circles behind icons
+    article h3 {
+        display: inline-block;
+}
+
+// positioning and styling favicons
 .fa-solid {
     background-color: $secondary;
     padding: 20px 7px;
@@ -95,8 +94,8 @@
 // giving the teal buttons a hover/focus effect
 .fa-solid:hover,
 .fa-solid:focus {
-    color: #0000DA;
-    border: 3px solid #0000DA;
+    color: $quaternary;
+    border: 3px solid $primary;
     // border-bottom: 3px solid #0000DA;
     border-radius: 50%;
 }
@@ -120,3 +119,53 @@
     margin-top: -40px;
 }
 
+// *********** contact.html ***********
+
+.bodyContact {
+    background-color: $quinary;
+}
+
+.contactContainer {
+    display: flex;
+}
+
+.contactFormBox {
+    background-color: $quaternary;
+    box-shadow: -40px 40px 0px 0px $primary;
+    margin-left: 15%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    button {
+        width: 100%;
+    }
+}
+
+
+
+
+// *********** blog.html ***********
+
+
+
+.twoColumnContainer {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.blogPost {
+    display: flex;
+    flex-direction: column;
+}
+
+.commentOne,
+.commentTwo {
+    position: relative;
+    img {
+        position: absolute;
+        left: -65px;
+        top: 20px;
+    }
+}

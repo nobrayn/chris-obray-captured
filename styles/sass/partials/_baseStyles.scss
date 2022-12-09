@@ -8,7 +8,7 @@
 
 button {
     color: $tertiary;
-    background-color: $tertiary;
+    background-color: $secondary;
     font-size: 2rem;
     text-align: center;
     line-height: 3.2rem;
@@ -32,12 +32,29 @@ button {
 .findOutBtn:focus,
 .readMore:hover,
 .readMore:focus {
-    color: #0000DA;
-    border-right: 3px solid #0000DA;
-    border-bottom: 3px solid #0000DA;
+    color: $quaternary;
+    border-right: 3px solid $primary;
+    border-bottom: 3px solid $primary;
     border-radius: 5px;
 }
 
 img {
     max-width: 100%;
 }
+
+input {
+    border: none;
+    border-bottom: 2px solid $secondary;
+    background-color: $quaternary;
+    padding: 10px 30px;
+    margin-bottom: 40px;
+}
+
+textarea {
+    border: 2px solid $secondary;
+    background-color: $quaternary;
+    resize: none;
+    width: 100%;
+    padding: 10px 30px;
+}
+

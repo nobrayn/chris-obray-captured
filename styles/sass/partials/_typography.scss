@@ -21,8 +21,11 @@ button,
     text-transform: uppercase;
 }
 
+// styling user input areas the same as paragraphs
 p,
-a {
+a,
+input,
+textarea {
     font-family: $bodyFont;
     font-style: normal;
     font-weight: normal;
@@ -30,16 +33,17 @@ a {
     line-height: 3.2rem;
 }
 
-h1 {
+// targeting the h1 on the main page only
+.headerContainerMain h1 {
     font-size: 13.8rem;
     text-align: center;
 }
 
 // these are h1's on the other pages, with different styling from the h1 on the main page
-.blog h1,
-.contact h1 {
+.headerContainer h1 {
     font-size: 8rem;
     line-height: 9.2rem;
+    text-align: center;
 }
 
 h2 {

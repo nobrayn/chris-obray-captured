@@ -7,20 +7,12 @@
         padding: 20px;
         li {
             padding: 0 10px;
-            transition: .2s; // putting transition properties here, the parent of the anchor element, isn't working like I thought it should.
+            transition: .2s;
         }
     }
 }
 
 a:hover,
 a:focus {
-    color: $secondary; // only use border-bottom! See Contact styleguide
-    // border-bottom: 3px solid #0000DA; // might remove this
+    border-bottom: 3px solid $secondary;
 }
-
-// a {
-//     border-bottom: 3px solid transparent; /* so the element doesn't move when hovered/focused */
-//     :focus,
-//     :hover {
-//     }
-// }
