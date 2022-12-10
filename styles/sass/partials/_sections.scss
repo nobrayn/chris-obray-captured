@@ -3,6 +3,7 @@
 // *********** index.html ***********
 
 // whatIs section
+
 .mainFlex {
     text-align: center;
     margin: 150px 0px;
@@ -11,6 +12,7 @@
 // article section, 2x2 grid, full-bleed so flex-basis set at 50%, no wrapper for this section
 .articleGrid {
     display: flex;
+    background-color: $quaternary;
 }
 
 .grid2x2 {
@@ -44,6 +46,30 @@
     margin-bottom: 0;
 }
 
+.box {
+    width: 50%;
+}
+
+.box1,
+.box3 {
+    align-self: center;
+    padding-right: 40px;
+    img {
+        height: 100%;
+        box-shadow: 40px 40px 0px 0px $primary;
+    }
+}
+
+.box2,
+.box4 { 
+    align-self: center;
+    padding-left: 40px;
+    img {
+        height: 100%;
+        box-shadow: -40px 40px 0px 0px $primary;
+    }
+}
+
 // prevent READ MORE buttons from horizontally filling flex container
 .readMore {
     width: fit-content;
@@ -54,6 +80,11 @@
 }
 
 // article list section
+.articleListOne,
+.articleListTwo {
+    background-color: $quinary;
+}
+
 .articleListOne ul,
 .articleListTwo ul {
     margin-top: 100px;
@@ -110,7 +141,7 @@
     margin: 100px auto 100px auto;
     display: flex;
     img {
-        box-shadow: 40px 40px 0px 0px $primary
+        box-shadow: 40px 40px 0px 0px $primary;
     }
 }
 
@@ -118,6 +149,8 @@
     margin-left: 80px;
     margin-top: -40px;
 }
+
+
 
 // *********** contact.html ***********
 
@@ -146,13 +179,69 @@
 
 
 // *********** blog.html ***********
+.headerBlog {
+    margin-bottom: 29%;
+}
 
-
-
+.headerContainerBlog {
+    width: 100%;
+    position: relative;
+    img {
+        position: absolute;
+        right: 0;
+        z-index: 0;
+        max-width: 66%;
+        box-shadow: -4em 4em 0px 0px $primary;
+    }
+}
 .twoColumnContainer {
     display: flex;
     flex-direction: row;
+}
 
+.blogLeftSide {
+    margin-top: 34%;
+    border: lightcoral 1px solid;
+    flex-basis: 30%;
+    ul li {
+        font-family: $bodyFont;
+        font-style: normal;
+        text-transform: none;
+        list-style-type: disc;
+        text-align: left;
+        margin-left: 22px;
+        padding-left: 8px;
+        &::marker {
+        color: $secondary;
+        }
+    }
+}
+
+span a {
+    font-style: italic;
+    font-weight: bold;
+}
+
+aside div {
+    padding-top: 1px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    background-color: $quaternary;
+}
+
+// positioning small image on left sidebar
+.blogImageBox {
+    position: relative;
+    img {
+        position: absolute;
+        max-width: 34%;
+    }
+}
+
+.blogRightSide {
+    margin-left: 5%;
+    border: royalblue 1px solid;
+    flex-basis: 65%;
 }
 
 .blogPost {

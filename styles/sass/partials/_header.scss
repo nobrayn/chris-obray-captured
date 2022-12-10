@@ -1,15 +1,18 @@
 @use "variables" as *;
 
+    // header of the index page
 .headerIndex {
     background-image: url(../captured-final-assets/header-image.jpg);
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
     position: relative;
+    background-color: $quinary;
     min-height: 100vh;
     z-index: 1;
 }
 
+    // header of the contact page
 .headerContact {
     background-image: url(../captured-final-assets/contact-header.jpg);
     background-size: cover;
@@ -19,6 +22,7 @@
     min-height: 70vh;
 }
 
+    // header of the blog page
 .headerBlog {
     background-image: url(../captured-final-assets/blog-header.jpg);
     background-size: cover;
@@ -27,8 +31,6 @@
     position: relative;
     min-height: 70vh;
 }
-
-
 
 .headerContainerMain {
     width: 100%;
@@ -48,7 +50,7 @@
         text-align: center;
         position: absolute;
         width: 100%;
-        margin-top: 540px;
+        margin-top: 340px;
         z-index: 2;
     }
 }

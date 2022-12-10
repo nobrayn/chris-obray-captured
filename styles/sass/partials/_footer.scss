@@ -1,5 +1,10 @@
 @use "variables" as *;
 
+footer {
+    background-color: $quaternary;
+    display: inline-block;
+}
+
 .footerFlex {
     margin-top: 150px;
     display: flex;
