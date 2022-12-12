@@ -40,7 +40,6 @@
     align-self: center; 
   }
   
-
   .grid2x2>div>div {
     padding: 0px;
     margin: 40px 0px;
@@ -98,6 +97,7 @@
   }
 
 
+
 // blog
   .blogImageBox img {
     display: none;
@@ -126,13 +126,16 @@
   .blogRightSide {
     flex-basis: 100%;
   }
+
   .commentOne {
     margin-bottom: 60px; 
   }
+
   .commentBox,
   .commentTwo {
     margin-bottom: 0px; 
   }
+
 
   // contact
   .headerContact {
@@ -154,6 +157,7 @@
     }
   }
 
+  // placing left column at the bottom
   .twoColumnContainer {
     flex-direction: column;
     > :nth-child(1) {
@@ -169,6 +173,7 @@
     margin-top: 100px;
     margin-bottom: 50px;
   }
+
   .contactInfoBox {
     max-width: 100%;
   }
@@ -186,8 +191,8 @@
     }
     a {
     font-size: 1.3rem;
+    }
   }
-}
 
   .btmImagesFlex {
     margin-top: 50px;
@@ -208,12 +213,12 @@
     }
   }
 
+
   // blog
   .commentBox {
     padding: 0;
     margin-bottom: 50px;
   }  
-  
 }
 
 
@@ -245,5 +250,4 @@
   .contactInfoBox {
     margin-right: 25px;
   }
-
 }
