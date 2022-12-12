@@ -364,7 +364,8 @@ input {
   border-bottom: 2px solid #4CEEA7;
   background-color: #FAFAFA;
   padding: 10px 30px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 textarea {
@@ -534,7 +535,7 @@ a:focus {
 }
 
 .box {
-  width: 50%;
+  width: 70%;
 }
 
 .box1,
@@ -644,8 +645,22 @@ article h3 {
 }
 
 .profileText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 80px;
   margin-top: -40px;
+}
+.profileText a {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .btmImages {
@@ -680,8 +695,8 @@ article h3 {
 }
 
 .contactLeft {
-  margin-top: 100px;
-  margin-bottom: 150px;
+  margin-top: 40px;
+  margin-bottom: 100px;
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
 }
@@ -718,7 +733,11 @@ article h3 {
   border-bottom: 3px solid #4CEEA7;
 }
 
-.contactInfoBox > p {
+.contactInfoBox {
+  max-width: 79%;
+}
+
+> p {
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -971,6 +990,11 @@ footer a:hover, footer a:focus {
   .profileFlex .profileText {
     margin: 40px 7.5% 0 7.5%;
   }
+  .profileFlex .profileText a {
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-top: 10px;
+  }
   .readMoreOne,
 .readMoreTwo,
 .findOutBtn .findOutBtnTwo {
@@ -1003,6 +1027,13 @@ footer a:hover, footer a:focus {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .commentOne {
+    margin-bottom: 60px;
+  }
+  .commentBox,
+.commentTwo {
+    margin-bottom: 0px;
+  }
   .headerContact {
     min-height: 40vh;
   }
@@ -1034,7 +1065,12 @@ footer a:hover, footer a:focus {
             order: 1;
   }
   .contactLeft {
-    margin-left: 25%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .contactInfoBox {
+    max-width: 100%;
   }
 }
 /* Landscape phone to portrait tablet */
@@ -1057,6 +1093,7 @@ footer a:hover, footer a:focus {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-left: 90px;
   }
   .btmImagesFlex a {
     margin: 0;
@@ -1069,10 +1106,9 @@ footer a:hover, footer a:focus {
   .btmImagesFlex img {
     max-width: 75%;
   }
-  .commentTwo,
-.commentBox {
-    margin-bottom: 0px;
-    padding: 40px 20px 20px 0;
+  .commentBox {
+    padding: 0;
+    margin-bottom: 50px;
   }
 }
 /* Landscape phones and down */

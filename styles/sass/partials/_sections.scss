@@ -46,7 +46,7 @@
 }
 
 .box {
-    width: 50%; // necessary?
+    width: 70%; // necessary?
 }
 
 .box1,
@@ -146,8 +146,14 @@
 }
 
 .profileText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-left: 80px;
     margin-top: -40px;
+    a {
+        align-self: flex-start;
+    }
 }
 
 .btmImages {
@@ -179,8 +185,8 @@
 }
 
 .contactLeft {
-    margin-top: 100px;
-    margin-bottom: 150px;
+    margin-top: 40px;
+    margin-bottom: 100px;
     flex-basis: 40%;
     .favicons {
         display: flex;
@@ -213,7 +219,9 @@
     }
 }
 
-.contactInfoBox > p {
+.contactInfoBox{
+    max-width: 79%;
+} > p {
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -221,7 +229,6 @@
 .address p {
     margin: 3px 0;
 }
-
 
 
 // positioning contact form up into banner image
