@@ -15,11 +15,11 @@
     // header of the contact page
 .headerContact {
     background-image: url(../captured-final-assets/contact-header.jpg);
-    background-size: cover;
+    background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
     position: relative;
-    min-height: 70vh;
+    min-height: 60vh;
 }
 
     // header of the blog page
@@ -29,7 +29,7 @@
     background-position: top center;
     background-repeat: no-repeat;
     position: relative;
-    min-height: 70vh;
+    min-height: 50vh;
 }
 
 .headerContainerMain {

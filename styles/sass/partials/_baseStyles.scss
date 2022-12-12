@@ -45,6 +45,7 @@ button {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 input {
@@ -63,3 +64,20 @@ textarea {
     padding: 10px 30px;
 }
 
+// changing default focus color to match site palette and tweaking style
+a:focus {
+    outline-color: $secondary;
+    outline-style: solid;
+    outline-offset: 6px;
+    outline-width: 2px;
+    // box-shadow: 0 0 0 2px $secondary;
+}
+
+// continuation above, tweaked for form elements
+input:focus,
+textarea:focus {
+    outline-color: $secondary;
+    outline-style: solid;
+    // outline-offset: 6px;
+    outline-width: 2px;
+}

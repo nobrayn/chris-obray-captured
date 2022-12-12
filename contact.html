@@ -34,40 +34,45 @@
 
 	<main class="mainContact" id="mainContact">
 		<div class="wrapper">
-			<div class="contactContainer">
-				<div class="contactInfoBox">
+			<div class="twoColumnContainer">
+				<div class="contactLeft">
 					<div class="favicons">
-						<a href="http://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-						<a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
-						<a href="http://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
-						<a href="http://www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
-					</div> <!-- .favicons end-->
+						<a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+						<a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+						<a href="http://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+					</div> <!-- .favicons end -->
+					
+					<div class="contactInfoBox">
+						<a class="emailAddress" href="mailto:info@email.com"><h4>INFO@EMAIL.COM</h4></a>
+						<p>123 - 456 - 7890</p>
+						<div class="address">
+							<p><a href="https://goo.gl/maps/z3Df3k4REoQ1yp6z5" target="_blank">123 Queen Street West, Unit 10</a></p>
+							<p><a href="https://goo.gl/maps/z3Df3k4REoQ1yp6z5" target="_blank">Toronto, Ontario</a></p>		
+							<p><a href="https://goo.gl/maps/z3Df3k4REoQ1yp6z5" target="_blank">M5V2D5</a></p>
+						</div> <!-- .address end -->
+					</div> <!-- .contactInfoBox end -->
+				</div> <!-- .contactLeft end -->
 
-				<!-- this might need to be another type of element -->
-				<a class="emailAddress" href=""mailto:info@email.com"><h4>INFO@EMAIL.COM</h4></a>
-				<p>123 - 456 - 7890</p>
-				<p><a class="address" href="https://goo.gl/maps/z3Df3k4REoQ1yp6z5">123 Queen Street West, Unit 10</a></p>
-				<p><a class="address" href="https://goo.gl/maps/z3Df3k4REoQ1yp6z5">Toronto, Ontario</a></p>		
-				<p><a class="address" href="https://goo.gl/maps/z3Df3k4REoQ1yp6z5">M5V2D5</a></p>
-				</div> <!-- .contactInfoBox end-->
-				
-				<div class="contactFormBox">
-					<form action="#" method="#" name="emailForm">
-						<label for="name"></label>
-						<input type="text" id="name" name="name" placeholder="Name">
-						<label for="emailAddress"></label>
-						<input type="text" id="emailAddress" name="emailAddress" placeholder="Email address">
-						<label for="message"></label>
-						<textarea name="message" placeholder="Message" id="message" cols="70" rows="6"></textarea>
-						<button type="submit" value="contactSubmit">submit</button>
-					</form>
-				</div> <!-- .contactFormBox end-->
-			</div> <!-- .contactContainer end-->
+				<div class="contactRight">
+					<div class="contactFormBox">
+						<form action="#" method="#" name="emailForm">
+							<label for="name"></label>
+							<input type="text" id="name" name="name" placeholder="Name">
+							<label for="emailAddress"></label>
+							<input type="text" id="emailAddress" name="emailAddress" placeholder="Email address">
+							<label for="message"></label>
+							<textarea name="message" placeholder="Message" id="message" cols="70" rows="6"></textarea>
+							<button type="submit" value="contactSubmit">submit</button>
+						</form>
+					</div> <!-- .contactFormBox end -->
+				</div> <!-- .contactRight end -->
+			</div> <!-- .twoColumnContainer end -->
 		</div> <!-- .wrapper end-->
 	</main>
 
 	<footer>
-		<a href="https://junocollege.com/">Copyright © 2022 Juno College</a>
+		<a href="https://junocollege.com/" target="_blank">Copyright © 2022 Juno College</a>
 	</footer>
 
 </body>

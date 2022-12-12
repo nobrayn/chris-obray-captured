@@ -1,1 +1,233 @@
+@use "variables" as *;
 // consider a max-width media query for 1720px to contain everything within the max-width of the header image
+// or 1525 because things start going weird on the blog page at that point
+
+// copy paste default queries
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  // index
+  .headerIndex {
+    min-height: 75vh;
+  }
+
+  // making h1 reactive to screen width
+  .headerContainerMain {
+    h1 {
+      font-size: 11vw;
+      margin-top: 220px;
+    }
+  }
+
+  .mainFlex {
+    margin: 50px 0px;
+  }
+
+  .grid2x2  {
+    // display: flex;
+    // flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .topBoxLeftJustify,
+  .btmBoxRightJustify {
+    text-align: center;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    padding: 0px;
+  }
+
+  .grid2x2>div>div {
+    padding: 0px;
+    margin: 40px 0px;
+  }
+  
+  // arranging boxes for proper image->text consistency
+  .articleGrid {
+    flex-direction: column;
+    > :nth-child(1) {
+      order: 1;
+    }
+    > :nth-child(2) {
+      order: 2;
+    }
+    > :nth-child(3) {
+      order: 4;
+    }
+    > :nth-child(4) {
+      order: 3;
+    }
+  }
+
+  .articleListOne ul,
+  .articleListTwo ul {
+    flex-direction: column;
+    margin: 20px 0 0 15%; // I could not get items to align center, so this is my workaround.
+  }
+
+  .articleListOne p,
+  .articleListTwo p {
+    margin-top: 0px;
+  }
+  
+  .profile {
+    margin-top: 20px;
+  }
+  
+  .profileFlex {
+    flex-direction: column;
+    margin-bottom: 40px;
+    .profileText {
+      margin: 40px 7.5% 0 7.5%;
+    }
+  }
+
+  .readMoreOne,
+  .readMoreTwo,
+  .findOutBtn
+  .findOutBtnTwo {
+    align-self: center;
+  }
+
+
+// blog
+  .blogImageBox img {
+    display: none;
+  }
+
+.headerContainerBlog {
+    width: 100%;
+    position: static;
+    text-align: center;
+    img {
+        position: static;
+        max-width: 58%;
+        box-shadow: -4rem 4rem 0px 0px $primary;
+    }
+  }
+
+  .headerBlog {
+    margin-bottom: 4%;
+  }
+
+  .blogLeftSide {
+    display: none;
+    flex-basis: 0%;
+  }
+
+  .blogRightSide {
+    flex-basis: 100%;
+  }
+
+
+  // contact
+  .headerContact {
+    min-height: 40vh;
+  }
+  .headerContainerContact {
+    h1 {
+    font-size: 8.5vw;
+    }
+  }
+
+  .contactRight {
+    // flex-basis: 60%;
+    top: -160px;
+    position: static;
+    div {
+      position: static;
+      margin-top: 50px;
+    }
+  }
+
+  .twoColumnContainer {
+    flex-direction: column;
+    > :nth-child(1) {
+      order: 2;
+    }
+    > :nth-child(2) {
+      order: 1;
+    }
+  }
+
+  .contactLeft {
+    margin-left: 25%;
+    
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  // index
+
+  .navBar .wrapper ul {
+    margin-right: 0;
+    padding-right: 0;
+    li {
+      padding: 0 4px;
+    }
+    a {
+    font-size: 1.3rem;
+  }
+}
+
+  .btmImagesFlex {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+      margin: 0;
+      &:hover,
+      &:focus {
+        border: none;
+        transform: scale(1);
+      }
+    }
+    img {
+      max-width: 75%;
+    }
+  }
+  
+  // blog
+  .commentTwo,
+  .commentBox {
+    margin-bottom: 0px;
+    padding: 40px 20px 20px 0;
+  }  
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  // index
+
+  .headerIndex {
+    min-height: 30vh;
+  }
+
+  .headerContainerMain {
+  h1 {
+      font-size: 10vw;
+      margin-top: 90px;
+    }
+  img {
+    display: none;
+    }
+  }
+
+
+  // contact
+  .contactFormBox {
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .contactInfoBox {
+    margin-right: 25px;
+  }
+}

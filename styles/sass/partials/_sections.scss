@@ -16,7 +16,6 @@
 }
 
 .grid2x2 {
-    // min-height: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -47,25 +46,23 @@
 }
 
 .box {
-    width: 50%;
+    width: 50%; // necessary?
 }
 
 .box1,
 .box3 {
-    align-self: center;
+    align-self: center; // necessary?
     padding-right: 40px;
     img {
-        height: 100%;
         box-shadow: 40px 40px 0px 0px $primary;
     }
 }
 
 .box2,
 .box4 { 
-    align-self: center;
+    align-self: center; // necessary?
     padding-left: 40px;
     img {
-        height: 100%;
         box-shadow: -40px 40px 0px 0px $primary;
     }
 }
@@ -87,12 +84,12 @@
 
 .articleListOne ul,
 .articleListTwo ul {
-    margin-top: 100px;
+    margin-top: 60px;
     display: flex;
     flex-direction: row;
     li {
         text-align: left;
-        margin: 0 50px 0 50px;
+        margin: 0 30px 0 20px;
         position: relative;
     }
 }
@@ -122,7 +119,7 @@
     padding: 20px 10px;
 }
 
-// giving the teal buttons a hover/focus effect
+// giving the teal buttons a hover/focus effect. This isn't working on focus, however. Problem for another day.
 .fa-solid:hover,
 .fa-solid:focus {
     color: $quaternary;
@@ -130,6 +127,8 @@
     // border-bottom: 3px solid #0000DA;
     border-radius: 50%;
 }
+
+
 
 // profile section
 
@@ -141,6 +140,7 @@
     margin: 100px auto 100px auto;
     display: flex;
     img {
+        align-self: center;
         box-shadow: 40px 40px 0px 0px $primary;
     }
 }
@@ -150,6 +150,26 @@
     margin-top: -40px;
 }
 
+.btmImages {
+    background-color: $quaternary;
+    display: inline-block;
+}
+
+.btmImagesFlex {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    transition: 0.2s;
+    a {
+        margin: 0 10px 0 10px;
+        &:hover,
+        &:focus {
+            border: none;
+            transform: scale(1.1);
+        }
+    }
+}
 
 
 // *********** contact.html ***********
@@ -158,18 +178,69 @@
     background-color: $quinary;
 }
 
-.contactContainer {
-    display: flex;
+.contactLeft {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    flex-basis: 40%;
+    .favicons {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 60%;
+        border: none;
+        a {
+            transition: 0.3s;
+            &:hover,
+            &:focus {
+            border: none;
+            color: $secondary;
+            }
+        } 
+    }
 }
+
+.contactInfoBox a {
+    line-height: 2.2rem;
+    &a:hover,
+    &a:focus {
+        border-bottom: 3px solid $secondary;
+    }
+    h4 {
+        display: inline-block;
+        :hover,
+        :focus {
+            border-bottom: 3px solid $secondary;
+        }
+    }
+}
+
+.contactInfoBox > p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.address p {
+    margin: 3px 0;
+}
+
+
+
+// positioning contact form up into banner image
+.contactRight {
+    flex-basis: 60%;
+    top: -160px;
+    position: relative;
+    div {
+        position: absolute;
+    }
+}
+
 
 .contactFormBox {
     background-color: $quaternary;
     box-shadow: -40px 40px 0px 0px $primary;
-    margin-left: 15%;
     padding: 40px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 80px;
     button {
         width: 100%;
     }
@@ -180,7 +251,7 @@
 
 // *********** blog.html ***********
 .headerBlog {
-    margin-bottom: 29%;
+    margin-bottom: 5%;
 }
 
 .headerContainerBlog {
@@ -190,8 +261,8 @@
         position: absolute;
         right: 0;
         z-index: 0;
-        max-width: 66%;
-        box-shadow: -4em 4em 0px 0px $primary;
+        max-width: 58%;
+        box-shadow: -4rem 4rem 0px 0px $primary;
     }
 }
 .twoColumnContainer {
@@ -200,12 +271,20 @@
 }
 
 .blogLeftSide {
-    margin-top: 34%;
-    border: lightcoral 1px solid;
-    flex-basis: 30%;
+    margin-top: 0;
+    flex-basis: 32%;
+    position: relative;
+    div {
+        position: sticky;
+        top: 370px;
+    }
+    p {
+        padding-right: 40px;
+    }
     ul li {
         font-family: $bodyFont;
         font-style: normal;
+        font-weight: normal;
         text-transform: none;
         list-style-type: disc;
         text-align: left;
@@ -213,6 +292,7 @@
         padding-left: 8px;
         &::marker {
         color: $secondary;
+        // font-size: 1rem; // this makes the discs the right size, but then they are not vertically centered to the text. A problem for another day.
         }
     }
 }
@@ -225,23 +305,23 @@ span a {
 aside div {
     padding-top: 1px;
     padding-bottom: 20px;
-    padding-left: 5px;
+    padding-left: 10px;
     background-color: $quaternary;
 }
 
 // positioning small image on left sidebar
+// note: this is incorrect, but if I do this "properly" and create a div for this element to live inside with the property "position: relative", this element will not "stick"... problem for another day.
 .blogImageBox {
-    position: relative;
+    position: sticky;
+    top: 50px;
     img {
-        position: absolute;
         max-width: 34%;
     }
 }
 
 .blogRightSide {
-    margin-left: 5%;
-    border: royalblue 1px solid;
-    flex-basis: 65%;
+    margin-left: 8%;
+    flex-basis: 60%;
 }
 
 .blogPost {
@@ -251,10 +331,30 @@ aside div {
 
 .commentOne,
 .commentTwo {
+    margin-left: 120px;
     position: relative;
+    margin-bottom: 100px;
     img {
         position: absolute;
-        left: -65px;
+        left: -120px;
         top: 20px;
     }
 }
+
+.commentBox {
+    background-color: $quinary;
+    // margin-left: 15%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    input,
+    textarea {
+        background-color: $quinary;
+    }
+    button {
+        width: 100%;
+        padding: 8px 0px;
+    }
+}
+
