@@ -45,13 +45,8 @@
     margin-bottom: 0;
 }
 
-.box {
-    width: 70%; // necessary?
-}
-
 .box1,
 .box3 {
-    align-self: center; // necessary?
     padding-right: 40px;
     img {
         box-shadow: 40px 40px 0px 0px $primary;
@@ -72,6 +67,7 @@
     width: fit-content;
 }
 
+// align button to right side
 .readMoreTwo {
     align-self: flex-end;
 }

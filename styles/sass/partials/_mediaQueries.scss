@@ -34,12 +34,12 @@
     text-align: center;
   }
 
-  .box1,
-  .box2,
-  .box3,
-  .box4 {
+  .box {
     padding: 0px;
+    width: 70%; 
+    align-self: center; 
   }
+  
 
   .grid2x2>div>div {
     padding: 0px;

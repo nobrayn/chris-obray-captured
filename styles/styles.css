@@ -534,14 +534,8 @@ a:focus {
   margin-bottom: 0;
 }
 
-.box {
-  width: 70%;
-}
-
 .box1,
 .box3 {
-  -ms-flex-item-align: center;
-      align-self: center;
   padding-right: 40px;
 }
 .box1 img,
@@ -929,11 +923,11 @@ footer a:hover, footer a:focus {
 .btmBoxRightJustify {
     text-align: center;
   }
-  .box1,
-.box2,
-.box3,
-.box4 {
+  .box {
     padding: 0px;
+    width: 70%;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .grid2x2 > div > div {
     padding: 0px;
