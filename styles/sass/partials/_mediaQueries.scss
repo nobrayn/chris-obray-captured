@@ -2,7 +2,7 @@
 // consider a max-width media query for 1720px to contain everything within the max-width of the header image
 // or 1525 because things start going weird on the blog page at that point
 
-// copy paste default queries
+
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
@@ -144,6 +144,8 @@
   .headerContainerContact {
     h1 {
     font-size: 8.5vw;
+    margin-top: 40px;
+    margin-left: 20%;
     }
   }
 

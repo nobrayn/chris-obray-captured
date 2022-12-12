@@ -15,7 +15,7 @@
     // header of the contact page
 .headerContact {
     background-image: url(../captured-final-assets/contact-header.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     position: relative;
@@ -63,4 +63,9 @@
         text-align: center;
         margin-top: 140px;
     }
+}
+
+// moving text over slightly, off of red jacket person
+.headerContainerContact h1 {
+        margin-left: 8%;
 }

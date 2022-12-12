@@ -423,7 +423,7 @@ a:focus {
 
 .headerContact {
   background-image: url(../captured-final-assets/contact-header.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
@@ -469,6 +469,10 @@ a:focus {
 .headerContainerContact h1 {
   text-align: center;
   margin-top: 140px;
+}
+
+.headerContainerContact h1 {
+  margin-left: 8%;
 }
 
 .mainFlex {
@@ -660,6 +664,7 @@ article h3 {
 .btmImages {
   background-color: #FAFAFA;
   display: inline-block;
+  width: 100%;
 }
 
 .btmImagesFlex {
@@ -690,7 +695,7 @@ article h3 {
 
 .contactLeft {
   margin-top: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
 }
@@ -1033,6 +1038,8 @@ footer a:hover, footer a:focus {
   }
   .headerContainerContact h1 {
     font-size: 8.5vw;
+    margin-top: 40px;
+    margin-left: 20%;
   }
   .contactRight {
     top: -160px;

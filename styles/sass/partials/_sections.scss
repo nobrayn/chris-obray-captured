@@ -155,6 +155,7 @@
 .btmImages {
     background-color: $quaternary;
     display: inline-block;
+    width: 100%;
 }
 
 .btmImagesFlex {
@@ -183,7 +184,7 @@
 
 .contactLeft {
     margin-top: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     flex-basis: 40%;
     .favicons {
         display: flex;
