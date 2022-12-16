@@ -169,7 +169,7 @@
         &:hover,
         &:focus {
             border: none;
-            transform: scale(1.1);
+            transform: scale(0.5);
         }
     }
 }
@@ -336,8 +336,7 @@ aside div {
     flex-direction: column;
 }
 
-.commentOne,
-.commentTwo {
+.comment {
     margin-left: 120px;
     position: relative;
     margin-bottom: 100px;

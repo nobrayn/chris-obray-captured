@@ -56,13 +56,13 @@
 
 				<div class="contactRight">
 					<div class="contactFormBox">
-						<form action="#" method="#" name="emailForm">
-							<label for="name"></label>
-							<input type="text" id="name" name="name" placeholder="Name">
-							<label for="emailAddressContact"></label>
-							<input type="text" id="emailAddressContact" name="emailAddressContact" placeholder="Email address">
-							<label for="message"></label>
-							<textarea name="message" placeholder="Message" id="message" cols="70" rows="6"></textarea>
+						<form id="contactForm" onsubmit="return false" action="#" method="post" name="contactForm">
+							<label class="sr-only" for="contactName">Name</label>
+							<input type="text" id="contactName" name="contactName" placeholder="Name">
+							<label class="sr-only" for="contactEmailAddress">Email Address</label>
+							<input type="email" id="contactEmailAddress" name="contactEmailAddress" placeholder="Email address">
+							<label class="sr-only" for="message">Message</label>
+							<textarea name="contactMessage" placeholder="Message" id="contactMessage" cols="70" rows="6"></textarea>
 							<button type="submit" value="contactSubmit">submit</button>
 						</form>
 					</div> <!-- .contactFormBox end -->
@@ -74,6 +74,8 @@
 	<footer>
 		<a href="https://junocollege.com/" target="_blank">Copyright © 2022 Juno College</a>
 	</footer>
+
+	<script src="./scripts/app.js"></script>
 
 </body>
 </html>

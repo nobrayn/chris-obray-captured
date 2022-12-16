@@ -63,42 +63,44 @@
             <p>Monday May 4th 2019 by Dieula</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga repellendus deleniti provident architecto quas cumque, saepe corporis nostrum maiores asperiores! Corrupti ullam ipsa optio architecto laborum, consequuntur quia ut dolor? Natus hic pariatur quos eaque perspiciatis eos tempore, iure nemo reprehenderit, voluptas numquam commodi necessitatibus ea at asperiores? Eaque illum quo sint dolorum minima itaque cupiditate facere qui, adipisci unde omnis voluptas enim perspiciatis dignissimos consequuntur nulla quia officiis! Quam laboriosam voluptate, praesentium expedita ab natus quo quisquam, voluptas veritatis ducimus ipsum nesciunt excepturi repellat tenetur est, enim assumenda facere similique perspiciatis magnam itaque accusantium quia suscipit. Maxime porro voluptas iure! Accusantium, tempora. Soluta placeat dignissimos consequatur provident quasi distinctio facere et autem! Nesciunt nisi aut similique, itaque ratione facilis at ullam perferendis doloremque laudantium odio laboriosam fugiat suscipit, sed ab veniam libero harum consequuntur quo cum consequatur! Saepe eius reprehenderit, eos quaerat maiores commodi esse illo facere doloremque excepturi adipisci distinctio voluptate iusto perferendis sequi rerum vero in animi. Adipisci unde omnis voluptas enim perspiciatis dignissimos consequuntur nulla quia officiis! Quam laboriosam voluptate, praesentium expedita ab natus quo quisquam, voluptas veritatis ducimus ipsum nesciunt excepturi repellat tenetur est, enim assumenda facere similique.</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore voluptatum a id fuga, asperiores reiciendis placeat aliquam? Deleniti dignissimos eius rerum voluptatibus aliquam facere voluptate ad sit. Totam, deleniti nisi.</p>
-          </section> <!-- .blogPost end-->
+          </section> <!-- .blogPost end -->
 
           <section class="comments" id="comments">
             <h3>comments:</h3>
-            <div class="commentOne">
+            <div class="comment">
               <img src="./captured-final-assets/comment-1.jpg" alt="Small profile picture of a young black man in a baseball hat looking to the right.">
               <p>Tuesday October 9th, 2018 by Jeremy</p>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas modi nesciunt totam eos amet nihil facere quasi ducimus maiores a, ad reprehenderit veniam iusto cupiditate ea tempore architecto ipsa reiciendis nobis sequi. At dolor maiores aut voluptas non veniam nisi nobis, delectus dicta, quae!</p>
-            </div> <!-- .commentOne end-->
+            </div> <!-- .commentOne end -->
     
-            <div class="commentTwo">
+            <div class="comment">
               <img src="./captured-final-assets/comment-2.jpg" alt="Small profile picture of a young caucasian lady with long blonde hair looking to the left.">
               <p>Wednesday October 10th, 2018 by Julia</p>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, nobis, laudantium eaque laboriosam molestias earum nam accusamus atque nulla facere, illo labore magni doloribus quibusdam ratione non deserunt eveniet ut corporis consectetur itaque velit!</p>
-            </div> <!-- .commentTwo end-->
+            </div> <!-- .commentTwo end -->
           </section> <!-- .comments end -->
 
           <section class="commentBox">
-            <form action="#" method="#" name="commentForm">
-              <label for="name"></label>
-              <input type="text" id="name" name="name" placeholder="Name">
-              <label for="emailAddressComment"></label>
-              <input type="text" id="emailAddressComment" name="emailAddressComment" placeholder="Email address">
-              <label for="message"></label>
-              <textarea name="message" placeholder="Comment" id="message" cols="70" rows="6"></textarea>
+            <form id="commentForm" onsubmit="return false" action="#" method="post" name="commentForm">
+              <label class="sr-only" for="commentName">Name</label>
+              <input type="text" id="commentName" name="commentName" placeholder="Name" required>
+              <label class="sr-only" for="commentEmailAddress">Email Address</label>
+              <input type="email" id="commentEmail" name="commentEmail" placeholder="Email address" required>
+              <label class="sr-only" for="message">Comment</label>
+              <textarea name="commentMessage" placeholder="Comment" id="commentMessage" cols="70" rows="6" required></textarea>
               <button type="submit" value="commentSubmit">post comment</button>
             </form>
           </section> <!-- .commentBox end -->
-        </div> <!-- .blogRightSide end-->
+        </div> <!-- .blogRightSide end -->
       </div> <!-- .wrapper end -->
-    </div> <!-- .twoColumnContainer end-->
+    </div> <!-- .twoColumnContainer end -->
   </main>
 
   <footer>
     <a href="https://junocollege.com/" target="_blank">Copyright © 2022 Juno College</a>
   </footer>
   
+  <script src="./scripts/app.js"></script>
+
 </body>
 </html>
