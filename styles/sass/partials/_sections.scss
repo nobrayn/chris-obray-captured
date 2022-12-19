@@ -279,16 +279,23 @@
 
 .blogLeftSide {
     margin-top: 0;
-    flex-basis: 32%;
+    flex-basis: 33%;
     position: relative;
     div {
         position: sticky;
-        top: 370px;
+        top: 36%;
     }
+
+    h4 {
+        max-width: 91%;
+    }
+
     p {
-        padding-right: 40px;
+        max-width: 81%;
     }
+
     ul li {
+        max-width: 85%;
         font-family: $bodyFont;
         font-style: normal;
         font-weight: normal;
@@ -320,10 +327,8 @@ aside div {
 // note: this is incorrect, but if I do this "properly" and create a div for this element to live inside with the property "position: relative", this element will not "stick"... problem for another day.
 .blogImageBox {
     position: sticky;
-    top: 50px;
-    img {
-        max-width: 34%;
-    }
+    top: 0%;
+    max-width: 36%;
 }
 
 .blogRightSide {
