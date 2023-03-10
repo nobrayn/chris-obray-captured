@@ -2,7 +2,24 @@
 // consider a max-width media query for 1720px to contain everything within the max-width of the header image
 // or 1525 because things start going weird on the blog page at that point
 
+// adjusting blog left side container to fit on page
+@media (max-width: 1195px) {
+  .blogLeftSide div {
+    top: 32%;
+  }
+}
 
+// final adjustment of blog left side container before removing it @ 940px
+@media (max-width: 1077px) {
+
+  .blogLeftSide div {
+    top: 10%;
+  }
+
+  .blogImageBox img {
+    display: none;
+  }
+}
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
